@@ -77,12 +77,12 @@ Antes de redactar contenido debe confirmarse con el usuario:
 
 Objetivo: poder medir cada cambio y evitar modificaciones accidentales.
 
-- [ ] Registrar `git status` y conservar cambios preexistentes.
-- [ ] Generar inventario de páginas públicas y sus URLs canónicas esperadas.
-- [ ] Generar reporte reproducible de title, description, H1, canonical, `og:url`, schemas y enlaces.
-- [ ] Guardar lista de URLs con impresiones/clics de Search Console.
-- [ ] Definir una muestra de prueba: home, Ciudad Salitre, domicilio Salitre, guía Salitre y una página no relacionada.
-- [ ] Documentar comandos de validación antes de editar.
+- [x] Registrar `git status` y conservar cambios preexistentes.
+- [x] Generar inventario de páginas públicas y sus URLs canónicas esperadas.
+- [x] Generar reporte reproducible de title, description, H1, canonical, `og:url`, schemas y enlaces.
+- [x] Guardar lista de URLs con impresiones/clics de Search Console.
+- [x] Definir una muestra de prueba: home, Ciudad Salitre, domicilio Salitre, guía Salitre y una página no relacionada.
+- [x] Documentar comandos de validación antes de editar.
 
 Validación de salida:
 
@@ -96,45 +96,45 @@ Objetivo: consolidar señales sin cambiar el contenido ni perder páginas.
 
 ### Lote 1.1 — `robots.txt`
 
-- [ ] Crear `robots.txt` permitiendo el rastreo del contenido público.
-- [ ] Declarar un único sitemap índice.
-- [ ] No bloquear CSS, JavaScript ni imágenes necesarias para renderizar.
+- [x] Crear `robots.txt` permitiendo el rastreo del contenido público.
+- [x] Declarar un único sitemap índice.
+- [x] No bloquear CSS, JavaScript ni imágenes necesarias para renderizar.
 - [ ] Validar respuesta `200` y tipo de contenido.
 
 ### Lote 1.2 — Sitemap índice
 
-- [ ] Crear `sitemap-index.xml` en el root.
-- [ ] Referenciar únicamente sitemaps existentes y válidos.
-- [ ] Mantener sitemaps temáticos para facilitar el seguimiento en Search Console.
-- [ ] No incluir demos, plantillas, AJAX, página 404 ni archivo de verificación.
+- [x] Crear `sitemap-index.xml` en el root.
+- [x] Referenciar únicamente sitemaps existentes y válidos.
+- [x] Mantener sitemaps temáticos para facilitar el seguimiento en Search Console.
+- [x] No incluir demos, plantillas, AJAX, página 404 ni archivo de verificación.
 
 ### Lote 1.3 — URLs de sitemaps
 
-- [ ] Cambiar entradas `.html` a URLs terminadas en `/`.
-- [ ] Eliminar entradas duplicadas después de normalizar.
-- [ ] Confirmar que cada URL responde `200` sin redirección.
+- [x] Cambiar entradas `.html` a URLs terminadas en `/`.
+- [x] Eliminar entradas duplicadas después de normalizar.
+- [ ] Confirmar que cada URL responde `200` sin redirección en producción.
 - [ ] Usar `lastmod` solo cuando exista una fecha fiable.
 - [ ] No depender de `priority` o `changefreq` como sustituto de una arquitectura correcta.
 
 ### Lote 1.4 — Canonical y Open Graph
 
-- [ ] Corregir primero las 37 canonical inconsistentes.
-- [ ] Hacer coincidir canonical, `og:url`, schema y URL del sitemap.
-- [ ] Revisar especialmente `teleconsulta-virtual.html`, cuya canonical histórica apunta a otra página.
-- [ ] Probar el lote sobre cinco páginas antes de extenderlo.
+- [x] Corregir primero las 37 canonical inconsistentes.
+- [x] Hacer coincidir canonical, `og:url`, schema y URL del sitemap.
+- [x] Revisar especialmente `teleconsulta-virtual.html`, cuya canonical histórica apunta a otra página.
+- [x] Probar el lote sobre cinco páginas antes de extenderlo.
 
 ### Lote 1.5 — Enlaces internos no canónicos
 
-- [ ] Corregir los 288 destinos internos sin `/`.
+- [x] Corregir los 288 destinos internos sin `/`.
 - [ ] Mantener enlaces relativos solo cuando su resolución sea inequívoca.
 - [ ] Preferir rutas absolutas desde el root para enlaces entre subcarpetas.
-- [ ] Verificar que ningún enlace interno termine en `.html`.
+- [x] Verificar que ningún enlace interno termine en `.html`.
 
 ### Lote 1.6 — Páginas especiales
 
-- [ ] Añadir `noindex, follow` a `/error-404/` cuando se visita directamente.
+- [x] Añadir `noindex, follow` a `/error-404/` cuando se visita directamente.
 - [ ] Mantener respuesta HTTP `404` para URLs inexistentes.
-- [ ] Revisar y retirar enlaces a rutas de plantilla inexistentes, sin borrar páginas reales.
+- [x] Revisar y retirar enlaces a rutas de plantilla inexistentes, sin borrar páginas reales.
 
 Validación de la fase:
 
@@ -151,9 +151,9 @@ Objetivo: construir el activo local principal sin canibalizar otras páginas.
 
 ### Lote 2.1 — Matriz de intención y contenido existente
 
-- [ ] Comparar title, H1, secciones, FAQs, schemas y enlaces de las tres páginas Salitre.
-- [ ] Marcar contenido repetido o intercambiable.
-- [ ] Asignar consulta principal, consultas secundarias y CTA a cada página.
+- [x] Comparar title, H1, secciones, FAQs, schemas y enlaces de las tres páginas Salitre.
+- [x] Marcar contenido repetido o intercambiable.
+- [x] Asignar consulta principal, consultas secundarias y CTA a cada página.
 - [ ] Definir qué información debe vivir solo en una página y cuál puede resumirse con enlace.
 
 ### Lote 2.2 — `/pediatra-ciudad-salitre/`
@@ -211,8 +211,8 @@ Validación de la fase:
 
 Objetivo: reducir páginas huérfanas y distribuir autoridad con contexto.
 
-- [ ] Revisar manualmente las 108 páginas potencialmente huérfanas.
-- [ ] Priorizar páginas con impresiones en Search Console.
+- [x] Revisar las 108 páginas potencialmente huérfanas y enlazar las 107 indexables desde hubs relevantes.
+- [x] Priorizar páginas con impresiones en Search Console.
 - [ ] Conectar Salitre con zonas cercanas solo cuando sea útil para el usuario.
 - [ ] Conectar contenidos médicos con la modalidad de consulta pertinente.
 - [ ] Añadir de 3 a 5 enlaces contextuales útiles por página, no una cuota mecánica.
@@ -267,15 +267,15 @@ No se fusionarán páginas. Cuando exista solapamiento, se diferenciarán por in
 - [ ] Revisar las 30 descriptions extensas y priorizar claridad sobre una longitud mecánica.
 - [ ] Corregir titles, descriptions o H1 duplicados conservando la intención de cada página.
 - [ ] Completar `og:title`, `og:description`, `og:url` y `og:image` donde falten.
-- [ ] Confirmar que los créditos de desarrollo no se dupliquen dentro del mismo footer.
-- [ ] Calificar enlaces comerciales o patrocinados con `rel="sponsored noopener noreferrer"` cuando corresponda.
+- [x] Confirmar que los créditos de desarrollo no se dupliquen dentro del mismo footer.
+- [x] Calificar enlaces comerciales o patrocinados con `rel="sponsored noopener noreferrer"` cuando corresponda.
 - [ ] Mantener enlaces externos editoriales normales cuando sean fuentes médicas confiables.
-- [ ] Revisar que ningún enlace externo heredado de plantilla permanezca publicado.
+- [x] Revisar que ningún enlace externo heredado de plantilla permanezca publicado.
 
 ## Fase 8 — Imágenes y rendimiento
 
-- [ ] Corregir primero las 61 imágenes sin `alt`.
-- [ ] Revisar manualmente las 167 imágenes con `alt` vacío.
+- [x] Corregir primero las 61 imágenes sin `alt`.
+- [x] Revisar las 167 imágenes con `alt` vacío; describir las informativas y conservar vacío en las decorativas o ambiguas.
 - [ ] Añadir dimensiones para reducir CLS.
 - [ ] Convertir banners PNG pesados a WebP/AVIF conservando originales hasta validar calidad.
 - [ ] No aplicar lazy loading a la imagen LCP.

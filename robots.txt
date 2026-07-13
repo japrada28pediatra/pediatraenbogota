@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pediatraenbogota.com/sitemap-index.xml
