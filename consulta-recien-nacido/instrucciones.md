@@ -28,10 +28,10 @@ Modalidades de atención:
 * Orientación por WhatsApp
 
 Teléfono / WhatsApp:
-+57 318 702 2574
++57 318 043 5023
 
 Link de WhatsApp base:
-https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20quiero%20agendar%20una%20consulta%20pediatrica
+https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20quiero%20agendar%20una%20consulta%20pediatrica
 
 Instagram:
 https://www.instagram.com/drajazminpradapediatra/
@@ -361,10 +361,10 @@ Footer debe enlazar:
     Debe tener texto personalizado por landing.
     Ejemplo:
     Para lactancia:
-    https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20quiero%20una%20asesoria%20en%20lactancia%20materna
+    https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20quiero%20una%20asesoria%20en%20lactancia%20materna
 
 Para recién nacidos:
-https://wa.me/573187022574?text=Hola%20Dra.%20Jazmin,%20quiero%20una%20consulta%20para%20mi%20recien%20nacido
+https://wa.me/573180435023?text=Hola%20Dra.%20Jazmin,%20quiero%20una%20consulta%20para%20mi%20recien%20nacido
 
 REQUISITOS SEO
 
